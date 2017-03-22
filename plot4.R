@@ -19,11 +19,11 @@ png(file = "plot4.png", width = 480, height = 480)
 par(mfrow = c(2,2)) 
 
 # First plot
-hist(power$Global_active_power,
-     col = "red",
-     main = "Global Active Power",
-     xlab = "Global Active Power (kilowatts)",
-     ylab = "Frequency")
+plot(x = power$datetime,
+     y = power$Global_active_power,
+     type = "l",
+     xlab = "",
+     ylab = "Global Active Power")
 
 # Second plot
 with(power, plot(
