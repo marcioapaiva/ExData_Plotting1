@@ -20,3 +20,4 @@ hist(power$Global_active_power,
      xlab = "Global Active Power (kilowatts)",
      ylab = "Frequency")
 dev.off()
+
